@@ -1,1 +1,5 @@
-<h1>Are you sure you want to delete the book?</h1>
+<h1>Confirm deletion</h1>
+
+<%= form_for(@book, :method => 'delete') do |f| %>
+<%= f.submit("Delete Subject"); %>
+<% end %>

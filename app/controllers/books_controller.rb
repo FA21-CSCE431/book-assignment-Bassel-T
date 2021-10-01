@@ -48,6 +48,7 @@ class BooksController < ApplicationController
   end
   
   def delete
+	@book = Book.find(params[:id])
   end
 
   # DELETE /books/1 or /books/1.json
