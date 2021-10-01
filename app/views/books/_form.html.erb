@@ -13,16 +13,16 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, :required => true %>
+    <%= form.text_field :title %>
 	<br>
 	<%= form.label :author %>
-	<%= form.text_field :author, :required => true %>
+	<%= form.text_field :author %>
 	<br>
 	<%= form.label :price %>
-	<%= form.number_field :price, :required => true %>
+	<%= form.number_field :price %>
 	<br>
 	<%= form.label :published_date %>
-	<%= form.date_field :published_date, :required => true, id:"PublishedDate" %>
+	<%= form.date_field :published_date, id:"PublishedDate" %>
   </div>
 
   <div class="actions">
