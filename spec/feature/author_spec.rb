@@ -27,7 +27,7 @@ end
 RSpec.describe 'Including a Date', type: :feature do
   scenario 'valid inputs' do
     visit new_book_path
-	fill_in 'Publish_Date', with: DateTime.current.strftime("%m%d%Y\t%I%M%P")
+	fill_in 'PublishedDate', with: DateTime.current
 	fill_in 'Price', with: 5
 	fill_in 'Title', with: 'harry potter'
 	fill_in 'Author', with: 'J. K. Rowling'
