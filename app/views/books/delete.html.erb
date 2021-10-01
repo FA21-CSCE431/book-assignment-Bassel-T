@@ -1,1 +1,22 @@
-<h1>Are you sure you want to delete the book?</h1>
+<h1>Confirm deletion</h1>
+
+<%= form_for(@book, :method => 'delete') do |f| %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+  <br>
+  <strong>Author:</strong>
+  <%= @book.author %>
+  <br>
+  <strong>Price:</strong> $
+  <%= @book.price %>
+  <br>
+  <strong>Published Date:</strong>
+  <%= @book.published_date %>
+</p>
+
+<%= f.submit("Delete Subject"); %>
+<%= link_to 'Back', books_path %>
+
+<% end %>
